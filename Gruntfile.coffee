@@ -2,6 +2,23 @@ module.exports = (grunt) ->
 
   # Project configuration.
   grunt.initConfig
+    aws: grunt.file.readJSON('/Users/hchoi/.grunt-aws.json')
+    s3:
+      options:
+        key: '<%= aws.key %>'
+        secret: '<%= aws.secret %>'
+        bucket: '<%= aws.bucket %>'
+        access: 'public-read'
+        headers:
+          # Two Year cache policy (1000 * 60 * 60 * 24 * 730)
+          "Cache-Control": "max-age=630720000, public"
+          "Expires": new Date(Date.now() + 63072000000).toUTCString()
+      dev:
+        upload: [
+          src: './dist/*',
+          dest: '/'
+        ]
+
     coffee:
       dist:
         options:
@@ -50,6 +67,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-haml')
   grunt.loadNpmTasks('grunt-contrib-sass')
   grunt.loadNpmTasks('grunt-contrib-watch')
+  grunt.loadNpmTasks('grunt-s3')
 
   # Default task.
   grunt.registerTask 'default', ['prep', 'watch']

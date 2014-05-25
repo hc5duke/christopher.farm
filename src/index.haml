@@ -10,10 +10,12 @@
     .main
       %center
         %h1.w700
-          Homepage of
+          %span
+            Homepage of
           %span.rainbow Christopher Farm
-        %h2.blink
-          Welcome!
+        %h3.w700
+          %marquee{ behavior: "scroll", direction: "left" }
+            Welcome!
       %center
         %table.farm.w700{ border: 2, bordercolor: "#444", cellspacing: 0 }
           %tr
@@ -21,7 +23,9 @@
               %img#selfie{ src: "farm.jpg" }
             %th.justfied
               %h3
-                Aloha! My name is Christopher Farm. I am a co-founder at
+                Aloha! My name is
+                %span.blink Christopher Farm.
+                I am a co-founder at
                 %a{ href: "https://tenjin.io/" } Tenjin
                 and a gemini. Here are some of my favorite things.
                 Enjoy your visit!

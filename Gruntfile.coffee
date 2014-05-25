@@ -2,7 +2,7 @@ module.exports = (grunt) ->
 
   # Project configuration.
   grunt.initConfig
-    aws: grunt.file.readJSON('/Users/hchoi/.grunt-aws.json')
+    aws: grunt.file.readJSON('.grunt-aws.json')
     s3:
       options:
         key: '<%= aws.key %>'

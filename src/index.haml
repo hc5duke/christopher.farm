@@ -1,13 +1,73 @@
 !!!
 
-%html{lang: "en", "ng-app" => "myApp"}
+%html{ lang: "en" }
   %head
     %link{ rel: "stylesheet", href: "app.css" }
     %link{ href: "favicon.png", rel: "shortcut icon", type: "image/png" }
+    %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" }
     %title Christopher.Farm
   %body
-    .main{ ng_controller: "MyCtrl" }
-      test
-      {{ test }}
-    %script{ src: "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js" }
+    .main
+      %center
+        %h1.w700
+          Homepage of
+          %span.rainbow Christopher Farm
+        %h2.blink
+          Welcome!
+      %center
+        %table.farm.w700{ border: 2, bordercolor: "#444", cellspacing: 0 }
+          %tr
+            %th
+              %img#selfie{ src: "farm.jpg" }
+            %th
+              %h3
+                Aloha! My name is Christopher Farm. I am a co-founder at
+                %a{ href: "https://tenjin.io/" } Tenjin
+                and a gemini. Here are some of my favorite things.
+                Enjoy your visit!
+        %hr.w700
+        %table.farm.lighter.w700{ border: 2, bordercolor: "#444", cellspacing: 0 }
+          %tbody.centered
+            %tr
+              %td
+                %a{ href: "http://www.gohawaii.com/" }
+                  Hawai'i
+              %td
+                %a{ href: "http://web.mit.edu/" }
+                  M.I.T.
+              %td
+                %a{ href: "https://tenjin.io" }
+                  Tenjin
+              %td
+                %a{ href: "http://us.battle.net/sc2/en/"}
+                  Starcraft
+            %tr
+              %td
+                %a{ href: "https://www.linkedin.com/in/christopherfarm" }
+                  Linkedin
+              %td
+                %a{ href: "https://github.com/farmcp" }
+                  Github
+              %td
+                %a{ href: "http://bitelist.com/" }
+                  Bitelist
+                  %img{ src: "hot.gif" }
+              %td
+                %a{ href: "https://www.yahoo.com" }
+                  Google
+
+        %img{ src: "constuction_bar.gif" }
+
+        %script{ src: "http://ss.webring.com/navbar?f=j;y=hc5duke;u=defurl"}
+        Powered by <a href="http://dir.webring.com/rw" target=_top>WebRing</a>.
+
+      %center
+        .visitor
+          You are visitor #
+          %img{ src: "counter.gif"}
+        %img{ src: "ie_logo.gif"}
+        %img{ src: "ns_logo.gif"}
+        %img{ src: "notepad.gif"}
+
+    %iframe{ width: "1", height:"1", frameborder: "0", allowfullscreen: false, src: "https://www.youtube.com/embed/6U6XcinXCMY?autoplay=1"}
     %script{ src: "app.js" }

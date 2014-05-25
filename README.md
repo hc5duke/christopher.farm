@@ -7,5 +7,5 @@ http://christopher.farm
 ```bash
 $ npm install
 $ npm install -g grunt-cli http-server
-$ grunt & http-server dist
+$ grunt & http-server dist & open http://localhost:8080
 ```

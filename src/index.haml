@@ -62,50 +62,56 @@
 
         %img{ src: "constuction_bar.gif" }
 
-        %table{ width: "400", cellpadding: "2", cellspacing: "0", bgcolor: "#bbbbbb" }
-          %tbody
-            %tr
-              %td{nowrap: ""}
-                %table{ cellpadding: "1", cellspacing: "0", bgcolor: "#f4f4f4", width: "400"}
-                  %tbody
-                    %tr
-                      %td{ width: "1%", nowrap: ""}
-                        %a{ href: "http://www.webring.org/hub/pencilboard", target: "_top"}
-                          %img{ src: "http://img1.webring.com/r/p/pencilboard/t_logo", width: "100" }
-                      %td{ nowrap: ""}
-                        %table{ cellpadding: "0", cellspacing: "2", width: "100%"}
-                          %tbody
-                            %tr
-                              %td{ nowrap: ""}
-                                %a{ href: "http://www.webring.org/hub/pencilboard?sid=44", target: "_top", style: "color: #000000; text-decoration: none; font-weight: bold;" }
-                                  pencilboard
-                            %tr
-                              %td{ nowrap: "", colspan: "2", style: "color: #000000;" }
-                                <a href="http://www.webring.org/go?ring=pencilboard;id=44;prev" target="_top" title="visit previous site in pencilboard" style="color: #0000ff; text-decoration: none;">&lt; Prev</a>
-                                /
-                                <a href="#" onclick="window.open('http://hub.webring.org/hub/pencilboard/comments')" style="color: #0000ff; text-decoration: none; font-weight: bold;">Talk</a>
-                                /
-                                <a href="http://www.webring.org/cgi-bin/plike?ring=pencilboard;id=44;ps=1" target="_top" style="color: #0000ff; text-decoration: none; font-weight: bold;">Like</a>
-                                /
-                                <a href="http://www.webring.org/hub/pencilboard?sid=44" target="_top" style="color: #0000ff; text-decoration: none; font-weight: bold;" title="see all sites in pencilboard">Sites</a>
-                                /
-                                <a href="http://D.webring.org/go?ring=pencilboard;addsite" target="_top" title="join pencilboard community" style="color: #0000ff; text-decoration: none;">Join</a> 
-                                /
-                                <a href="http://www.webring.org/go?ring=pencilboard;id=44;random" target="_top" title="Goto a random site in the ring" style="color: #0000ff; text-decoration: none;">Surprise</a>
-                                /
-                                <a href="http://www.webring.org/go?ring=pencilboard;id=44;next" target="_top" title="go to next site in pencilboard" style="color: #0000ff; text-decoration: none;">Next &gt;</a>
-                            %tr
-                              %td{ colspan: "2", nowrap: ""}
-                                %form{ style: "margin-top: 0px;margin-bottom: 0px;", method: "POST", action: "http://www,webring.org/cgi-bin/Hubsearch?ringsearch" }
-                                  %input{ name:"query", type: "TEXT", size: "18", style:"height:19px;" }
-                                  %input{ type:"SUBMIT", name: "Submit", value: "Search", style:"height:19px;" }
-                                  %input{ type:"hidden", name: "ring", value: "pencilboard" }
-                          %tfoot
-                            %tr
-                              %th
-                                Powered by
-                                %a{ href: "http://dir.webring.com/rw", target: "_top" }
-                                  WebRing
+        .webring.w700
+          .pull-left
+            %table{ width: "400", cellpadding: "2", cellspacing: "0", bgcolor: "#bbbbbb" }
+              %tbody
+                %tr
+                  %td{nowrap: ""}
+                    %table{ cellpadding: "1", cellspacing: "0", bgcolor: "#f4f4f4", width: "400"}
+                      %tbody
+                        %tr
+                          %td{ width: "1%", nowrap: ""}
+                            %a{ href: "http://www.webring.org/hub/pencilboard", target: "_top"}
+                              %img{ src: "http://img1.webring.com/r/p/pencilboard/t_logo", width: "100" }
+                          %td{ nowrap: ""}
+                            %table{ cellpadding: "0", cellspacing: "2", width: "100%"}
+                              %tbody
+                                %tr
+                                  %td{ nowrap: ""}
+                                    %a{ href: "http://www.webring.org/hub/pencilboard?sid=44", target: "_top", style: "color: #000000; text-decoration: none; font-weight: bold;" }
+                                      pencilboard
+                                %tr
+                                  %td{ nowrap: "", colspan: "2", style: "color: #000000;" }
+                                    <a href="http://www.webring.org/go?ring=pencilboard;id=44;prev" target="_top" title="visit previous site in pencilboard" style="color: #0000ff; text-decoration: none;">&lt; Prev</a>
+                                    /
+                                    <a href="#" onclick="window.open('http://hub.webring.org/hub/pencilboard/comments')" style="color: #0000ff; text-decoration: none; font-weight: bold;">Talk</a>
+                                    /
+                                    <a href="http://www.webring.org/cgi-bin/plike?ring=pencilboard;id=44;ps=1" target="_top" style="color: #0000ff; text-decoration: none; font-weight: bold;">Like</a>
+                                    /
+                                    <a href="http://www.webring.org/hub/pencilboard?sid=44" target="_top" style="color: #0000ff; text-decoration: none; font-weight: bold;" title="see all sites in pencilboard">Sites</a>
+                                    /
+                                    <a href="http://D.webring.org/go?ring=pencilboard;addsite" target="_top" title="join pencilboard community" style="color: #0000ff; text-decoration: none;">Join</a> 
+                                    /
+                                    <a href="http://www.webring.org/go?ring=pencilboard;id=44;random" target="_top" title="Goto a random site in the ring" style="color: #0000ff; text-decoration: none;">Surprise</a>
+                                    /
+                                    <a href="http://www.webring.org/go?ring=pencilboard;id=44;next" target="_top" title="go to next site in pencilboard" style="color: #0000ff; text-decoration: none;">Next &gt;</a>
+                                %tr
+                                  %td{ colspan: "2", nowrap: ""}
+                                    %form{ style: "margin-top: 0px;margin-bottom: 0px;", method: "POST", action: "http://www,webring.org/cgi-bin/Hubsearch?ringsearch" }
+                                      %input{ name:"query", type: "TEXT", size: "18", style:"height:19px;" }
+                                      %input{ type:"SUBMIT", name: "Submit", value: "Search", style:"height:19px;" }
+                                      %input{ type:"hidden", name: "ring", value: "pencilboard" }
+                              %tfoot
+                                %tr
+                                  %th
+                                    Powered by
+                                    %a{ href: "http://dir.webring.com/rw", target: "_top" }
+                                      WebRing
+          .right
+            %img{ src: "baby.gif"}
+          .clear
+
       %center
         .visitor
           You are visitor #
